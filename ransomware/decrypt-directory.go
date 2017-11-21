@@ -81,7 +81,7 @@ func main() {
     fmt.Print("Enter decryption key: ")
     key_16, _ := reader.ReadString('\n')
     // We remove the new line at the end of key_16
-    key_16 = key_16[:len(key_16) - 2]
+    key_16 = key_16[:len(key_16) - 1]
     fmt.Println(key_16)
     dir, _ := os.Getwd()
     key := []byte(key_16)
