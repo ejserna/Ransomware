@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS ransomware_db;
+
+CREATE TABLE ransomware_db.Keys (
+	uuid_16 VARCHAR(45) NOT NULL PRIMARY KEY,
+    key_16 VARCHAR(45) NOT NULL
+);
+
+
+
